@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <field name="id" type="text" default="0" id="id"
+                readonly="true" class="readonly"
+                label="ID" description ="Property ID"/>
+    <field id="published" name="published" type="list" label="Publish" description="Published/Unpublished"
+        class="inputbox" size="1" default="1" >
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field>
+    
+    <field id="id_agent" name="id_agent" type="agentlist"  label="Agent"
+        extension="com_property" description="Agent name" required="true" />
+
+    <field id="id_owner" name="id_owner" type="propertyownerlist" label="Owner" extension="com_property"
+            description="Property Owner" class="inputbox" required="true" />
+
+    <field id="id_type" name="id_type" type="categorylist" extension="com_property"
+                label="Type" description="Property Type" class="inputbox" required="true" />
+
+     <field id="id_province" name="id_province" type="provincelist" extension="com_property"
+                label="City/State/Province" description="Province/City name" class="inputbox" required="true" />
+
+     <field id="id_district" name="id_district" type="districtlist" extension="com_property"
+                label="District/Location" description="District/Location name" class="inputbox" required="true" />
+
+
+    <field id="ref" name="ref" type="text" label="Ref" size="40" required="true" description="Use commonly for searching, reference to quickly access the whole system friendly for end user" />
+    
+    <field id="list" name="list" type="typelist" label="List in" description="Published/Unpublished" />
+        
+
+    <field id="tel" name="tel" type="text" label="Tel" description="" size="40" default="" />
+    <field id="date" name="date" type="calendar" label="Date" description="" size="10" default="" />
+    <field id="picture" name="picture" type="media" directory="properties" label="Picture"  description="" size="40" default="" />
+    <field id="start_date" name="start_date" type="calendar" label="Start date" description="" size="10" format="%Y-%m-%d" default="" />
+    <field id="end_date" name="end_date" type="calendar" label="End date" description="" size="10" format="%Y-%m-%d" default="" />
+
+    
+
+
+
+    <field id="price" name="price" type="text" label="Price" description="" size="40" default="" />
+    <field id="property_state" name="property_state" type="text" label="State" description="" size="40" default="" />
+    <field id="price_in_sq" name="price_in_sq" type="text" label="Price In Sqare" description="" size="40" default="" />
+
+    <field id="style" name="style" type="list" label="Style" description="Style of your property"
+        class="inputbox" size="1" default="1" >
+        <option value="0">Select style</option>
+        <option value="1">Colonial</option>
+        <option value="2">Khmer</option>
+        <option value="3">Modern</option>
+    </field>
+
+
+    <field id="condition" name="condition" type="list" label="Condition" description="Condition of your property"
+        class="inputbox" size="1" default="1" >
+        <option value="-2">Select condition</option>
+        <option value="0">Old</option>
+        <option value="1">Medium</option>
+        <option value="2">Good</option>
+        <option value="3">New</option>
+    </field>
+
+    <field id="commision_type" name="commision_type" type="list" label="Type for commision" description="Comission type of your property"
+        class="inputbox" size="1" default="1" >
+        <option value="-2">Select commistion type </option>
+        <option value="0">Percentage</option>
+        <option value="1">N#Month</option>
+        <option value="2">Absolute</option>
+    </field>
+
+    <field id="commision" name="commision" type="text" label="Commision" description="" size="40" default="" />
+
+    <field id="size_lot" name="size_lot" type="text" label="Size Lot" description="" size="40" default="" />
+    <field id="size_house" name="size_house" type="text" label="Size House" description="" size="40" default="" />
+
+    <!--Location-->
+    <field id="location_address" name="location_address" type="textarea" class='textareap' label="Address" description="" size="40" default="" />
+    <field id="location_street"  name="location_street" type="textarea" class='textareap' label="Street" description="" cols="40" default="" />
+    <field id="location_commune" name="location_commune" type="text" label="Commune" description="" size="40" default="" />
+    <field id="location_district" name="location_district" type="text" label="District" description="" size="40" default="" />
+    <field id="location_province" name="location_province" type="text" label="Provine" description="" size="40" default="" />
+    <field id="location_area" name="location_area" type="textarea"  class='textareap' label="Area" description="" size="40" default="" />
+
+    <!-- Feature -->
+    <field id="feature_story" name="feature_story" type="text" label="Story" description="" size="10" default="" />
+    <field id="feature_floor" name="feature_floor" type="text" label="Floor" description="" size="10" default="" />
+    <field id="feature_bedroom" name="feature_bedroom" type="text" label="Bed Room" description="" size="10" default="" />
+    <field id="feature_bathroom" name="feature_bathroom" type="text" label="Bath Room" description="" size="10" default="" />
+
+    
+    <field id="feature_livingroom" name="feature_livingroom" type="list" label="Living Room" description="" default="" >
+        <option value="0" >Small</option>
+        <option value="1" >Medium</option>
+        <option value="2" >Big</option>
+    </field>
+    <field id="feature_dinningroom" name="feature_dinningroom" type="list" label="Dinning Room" description=""  default="" >
+        <option value="0" >Small</option>
+        <option value="1" >Medium</option>
+        <option value="2" >Big</option>
+    </field>
+    <field id="feature_kitchen" name="feature_kitchen" type="list" label="Kitchen" description="" default="" >
+        <option value="0" >Small</option>
+        <option value="1" >Medium</option>
+        <option value="2" >Big</option>
+    </field>
+    <field id="feature_balcany" name="feature_balcany" type="list" label="Balcany" description="" default="" >
+        <option value="0" >Small</option>
+        <option value="1" >Medium</option>
+        <option value="2" >Big</option>
+    </field>
+    <field id="feature_terrace" name="feature_terrace" type="list" label="Terrace" description=""  default="" >
+        <option value="0" >Small</option>
+        <option value="1" >Medium</option>
+        <option value="2" >Big</option>
+    </field>
+    <field id="feature_garden" name="feature_garden" type="list" label="Garden" description="" default="" >
+        <option value="0" >Small</option>
+        <option value="1" >Medium</option>
+        <option value="2" >Big</option>
+    </field>
+    <field id="feature_pool" name="feature_pool" type="list" label="Pool" description="" default="" >
+        <option value="0" >Small</option>
+        <option value="1" >Medium</option>
+        <option value="2" >Big</option>
+    </field>
+    
+    <field id="feature_parking" name="feature_parking" type="text" label="Parking" description="" size="10" default="" />
+    <field id="feature_other" name="feature_other" type="textarea" label="Other" description="" rows="5" cols="40" default="" />
+
+    <!-- Equipment -->
+    <field id="equipment_bed" name="equipment_bed" type="text" label="Bed" description="" size="10" default="" />
+    <field id="equipment_mattress" name="equipment_mattress" type="text" label="Mattress" description="" size="10" default="" />
+    <field id="equipment_cloth" name="equipment_cloth" type="text" label="Cloth" description="" size="10" default="" />
+    <field id="equipment_dressingtable" name="equipment_dressingtable" type="text" label="Dressing Table" description="" size="10" default="" />
+    <field id="equipment_cupboard"  name="equipment_cupboard"  type="text" label="Cupboard" description="" size="10" default="" />
+    <field id="equipment_dinningtable" name="equipment_dinningtable" type="text" label="Dinning Table" description="" size="10" default="" />
+    <field id="equipment_chair" name="equipment_chair" type="text" label="Chair" description="" size="10" default="" />
+    <field id="equipment_sofa" name="equipment_sofa" type="text" label="Sofa" description="" size="10" default="" />
+    <field id="equipment_cabinet" name="equipment_cabinet" type="text" label="Cabinet" description="" size="10" default="" />
+    <field id="equipment_aircon" name="equipment_aircon" type="text" label="Aircon" description="" size="10" default="" />
+    <field id="equipment_gasstove" name="equipment_gasstove" type="text" label="Gasstove" description="" size="10" default="" />
+    <field id="equipment_microwave" name="equipment_microwave" type="text" label="Microwave" description="" size="10" default="" />
+    <field id="equipment_refrigerator" name="equipment_refrigerator" type="text" label="Refrigerator" description="" size="10" default="" />
+    <field id="equipment_tv" name="equipment_tv" type="text" label="TV" description="" size="10" default="" />
+    <field id="equipment_fan" name="equipment_fan" type="text" label="Fan" description="" size="10" default="" />
+    <field id="equipment_standingfan" name="equipment_standingfan" type="text" label="Standing Fan" description="" size="10" default="" />
+    <field id="equipment_satellitedish" name="equipment_satellitedish" type="text" label="Satellite Dish" description="" size="10" default="" />
+    <field id="equipment_fax" name="equipment_fax" type="text" label="Fax" description="" size="10" default="" />
+    <field id="equipment_generator" name="equipment_generator" type="text" label="Genertor" description="" size="10" default="" />
+    <field id="equipment_other" name="equipment_other" type="textarea" label="Other" description="" rows="5" cols="40" default="" />
+
+    <!-- Service -->
+    <field id="service_electricity" name="service_electricity" type="text" label="Electricity" description="" size="10" default="" />
+    <field id="service_water" name="service_water" type="text" label="Water" description="" size="10" default="" />
+    <field id="service_garbage" name="service_garbage" type="text" label="Garbage" description="" size="10" default="" />
+    <field id="service_security" name="service_security" type="text" label="Security" description="" size="10" default="" />
+    <field id="service_pestcontrol" name="service_pestcontrol" type="text" label="Pest Controll" description="" size="10" default="" />
+
+    <field id="service_cabletv" name="service_cabletv" type="list" label="Cable TV" description="" size="1" default="0" class="inputbox" >
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+    <field id="service_laundry" name="service_laundry" type="text" label="Laundry" description="" size="10" default="" />
+    <field id="service_swimmingpool" name="service_swimmingpool" type="text" label="Swimming Pool" description="" size="10" default="" />
+    <field id="service_idd " name="service_idd" type="text" label="Service IDD" description="" size="10" default="" />
+    <field id="service_fax" name="service_fax" type="text" label="Fax" description="" size="10" default="" />
+    <field id="service_newspaper" name="service_newspaper" type="text" label="Newspaper" description="" size="10" default="" />
+    <field id="service_credit" name="service_credit" type="text" label="Credit" description="" size="10" default="" />
+
+    <field id="service_internet" name="service_internet" type="list" label="Internet" description="" size="1" default="0" class="inputbox" >
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+    </field>
+
+    <field id="service_other" name="service_other" type="textarea" label="Other" description="" rows="5" cols="40" default="" />
+    <field id="checked_out" name="checked_out" type="text" label="Check Out" description="" size="10" default="" />
+    <field id="checked_out_time" name="checked_out_time" type="text" label="Check Out Time" description="" size="10" default="" />
+</form>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Property listing" >
+        <message>List of property </message>
+    </layout>
+    <fields name="request">
+        <fieldset name="request">
+            <!--
+            <field id="list" name="list" type="typelist" extension="com_property"
+                label="Type" description="Property Type" required="false" />
+                -->
+            <field name="type" id="type"
+                            type="list"
+                            description="Property type"
+                            label="Type"
+                    >
+                <option value="">All</option>
+                <option value="rent">Rent</option>
+                <option value="sale">Sale</option>
+                <option value="pawn">Pawn</option>
+                <option value="sublease">Sublease</option>
+            </field>
+                
+        </fieldset>
+    </fields>
+</metadata>

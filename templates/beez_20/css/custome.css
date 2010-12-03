@@ -1,0 +1,145 @@
+.paging{
+    background-color: #f5f5f5;
+    margin-top: -5px;
+    padding:4px;
+    width: 96%;
+}
+.paging ul{
+    list-style-type: none;
+    margin-top: 3px;
+}
+.paging ul li{
+    float: left;
+    list-style-type: none;
+    padding: 3px 6px;
+    margin: 3px 6px;
+}
+.paging ul li span,.paging ul li a{
+    margin: 5px;
+    padding: 5px;
+    background-color: #fff;
+    border:1px solid #ccc;
+    border-bottom: none;
+    padding-top: 2px;
+    padding-bottom: 6px;
+}
+.round,.carouselBtn{
+    border-radius :4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 1px solid #eee;
+}
+.clr{
+    clear:both;
+}
+.div-row-search{
+    line-height:1.7em;
+    margin:0;
+    padding:0;
+}
+.div-row-search label{
+    clear:left;
+    display:block;
+    float:left;
+    width:120px;
+}
+.div-row-search select {
+    float:right;
+    width:120px;
+    text-align: right;
+}
+.nitemsearch{
+    clear:left;
+    display:block;
+    float:left;
+    width:65px
+}
+.search-item li{
+    line-height: 2.2;
+}
+.nitem{
+        width:90px;
+        float:left;
+        clear:left;
+        display:block;
+        }
+.vitem{
+    float:right;
+    width:120px;
+    text-align: right;
+}
+.bnitem{
+        width:120px;
+        float:left;
+        clear:left;
+        display:block;
+        }
+.bvitem{
+    float:right;
+    width:200px;
+    text-align: right;
+}
+
+.listing{
+    width: 225px;
+    float:left;
+    margin-right: 3px;
+    margin-bottom: 10px;
+    padding: 3px;
+    background-color: #fcfafc;
+    border:1px solid #ddd;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+.listing li{
+    border-bottom: 1px solid rgb(245,245,245);
+}
+
+
+ul.uform{
+    list-style-type: none;
+}
+ul.uform li{
+    line-height: 1.5;
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+ul.uform div{
+    line-height: 1.5;
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+.tarea{
+    width: 400px;
+    height: 60px;
+}
+
+.inputbox {
+    background:url("../images/content_bg.gif") repeat-x scroll 0 0 #FFFFFF;
+    border:1px solid #CCCCCC;
+    padding:3px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    
+}
+select.inputbox{
+    width: 170px;
+    min-width: 170px;
+}
+.button,.backh3{
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    padding:2px;
+    border:1px solid #eee;
+}
+.require{
+    color:red;
+    font-weight: bold;
+}
+.lhighlight{
+    font-weight: bold;
+    height: 3em;
+    overflow: hidden;
+}

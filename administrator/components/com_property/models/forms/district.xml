@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+       <field name="id" type="text" default="0" id="id"
+                readonly="true" class="readonly"
+                label="ID" description ="ID"/>
+            
+	<field name="name"
+			type="text"
+			label="Name"
+			description="Province Name"
+			size="40"
+			default=""
+		/>
+
+        <field id="id_province" name="id_province" type="provincelist" label="Province" extension="com_property"
+            description="Province name" class="inputbox" required="true" >
+        </field>
+
+
+        <field name="slug"
+			type="text"
+			label="Slug"
+			description="Province Slug"
+			size="40"
+			default=""
+		/>
+
+
+        <field name="description"
+			type="editor"
+			label="Description"
+			description="Province descrition"
+			size="40"
+			default=""
+		/>
+</form>

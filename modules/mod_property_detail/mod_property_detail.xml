@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>Property show module </name>
+    <author>Joomlist team</author>
+    <creationDate>2010-10-23</creationDate>
+    <copyright>All rights reserved by joomlist.</copyright>
+    <license>GPL 2.0</license>
+    <authorEmail>chen.webdev@gmail.com</authorEmail>
+    <authorUrl>www.joomlist.com</authorUrl>
+    <version>1.0.0</version>
+    <description>Mode Property slide </description>
+    
+    <files>
+        <filename module="mod_property_detail">mod_property_detail.php</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                    <field
+                            name="type"
+                            type="list"
+                            default="0"
+                            label="Type"
+                            description="The sort of property to be displayed"
+                            required="true" >
+                            >
+                            <option value="0">Select a type</option>
+                            <option value="1">Latest</option>
+                            <option value="2">Random</option>
+                    </field>
+              </fieldset>
+        </fields>
+     </config>
+</install>
+

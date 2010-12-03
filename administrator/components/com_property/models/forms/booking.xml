@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+       <field name="id" id='id' type="text" default="0"
+			readonly="true" class="readonly"
+			label="ID" description ="ID"/>
+            
+	<field name="name"
+			type="text"
+			label="Name"
+			description="Agent Name"
+			size="40"
+			default=""
+		/>
+
+
+        <field name="nationality"
+			type="text"
+			label="Nationality"
+			description="Nationality"
+			size="40"
+			default=""
+		/>
+
+
+        <field name="passport_id"
+			type="text"
+			label="Passport"
+			description="Passport"
+			size="40"
+			default=""
+		/>
+
+
+        <field name="phone"
+			type="text"
+			label="Phone"
+			description="Phone"
+			size="40"
+			default=""
+		/>
+
+
+
+
+        <field name="email"
+			type="text"
+			label="Email"
+			description="Agent Email"
+			size="40"
+			default=""
+		/>
+
+        <field name="occupation"
+			type="text"
+			label="Occupation"
+			description="Occupation"
+			size="40"
+			default=""
+		/>
+        <field name="position"
+			type="text"
+			label="Position"
+			description="Position"
+			size="40"
+			default=""
+		/>
+        <field name="other"
+			type="editor"
+			label="Description"
+			description="Other description"
+			size="40"
+			default=""
+		/>
+
+
+
+        <field name="current_address"
+			type="editor"
+			label="Current Address"
+			description="Current Address"
+			size="40"
+			default=""
+		/>
+
+
+        <field name="work_address"
+			type="editor"
+			label="Working address"
+			description="Working address"
+			size="40"
+			default=""
+		/>
+</form>

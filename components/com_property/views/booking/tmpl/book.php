@@ -52,7 +52,7 @@
         </li>
         <li>
             <input type="checkbox" name="emailcopy" id="emailcopy"  class="inputbox"  />
-            <label  for="emailcopy" ><?php echo JText::_("Email copy to my mail") ?> </label>
+            <label  for="emailcopy" ><?php echo JText::_("Send copy to yourself") ?> </label>
         </li>
 
         <li>

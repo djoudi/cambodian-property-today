@@ -10,10 +10,10 @@
     </field>
     
     <field id="id_agent" name="id_agent" type="agentlist"  label="Agent"
-        extension="com_property" description="Agent name" required="true" />
+        extension="com_property" description="Agent name"  />
 
     <field id="id_owner" name="id_owner" type="propertyownerlist" label="Owner" extension="com_property"
-            description="Property Owner" class="inputbox" required="true" />
+            description="Property Owner" class="inputbox"  />
 
     <field id="id_type" name="id_type" type="categorylist" extension="com_property"
                 label="Type" description="Property Type" class="inputbox" required="true" />
@@ -22,7 +22,7 @@
                 label="City/State/Province" description="Province/City name" class="inputbox" required="true" />
 
      <field id="id_district" name="id_district" type="districtlist" extension="com_property"
-                label="District/Location" description="District/Location name" class="inputbox" required="true" />
+                label="District/Location" description="District/Location name" class="inputbox"  />
 
 
     <field id="ref" name="ref" type="text" label="Ref" size="40" required="true" description="Use commonly for searching, reference to quickly access the whole system friendly for end user" />

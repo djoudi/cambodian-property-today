@@ -4,17 +4,17 @@ defined('_JEXEC') or die;
 <form id="load-calculator" name="loan-calculator"  >
     <div class="div-row">
         <label> <?php echo JText::_("Amount of loan") ?> </label>
-        <input type="text" name="amount-load" id="amount-load" class="inputbox" />
+        <input type="text" name="amount-load" id="amount-load" class="inputbox" onkeyup="this.value = this.value.replace (/[^0-9\.]/, '');" />
     </div>
 
     <div class="div-row">
         <label> <?php echo JText::_("Annual Interest Rate (%)") ?> </label>
-        <input type="text" name="annual-interest-rate" id="annual-interest-rate" class="inputbox" />
+        <input type="text" name="annual-interest-rate" id="annual-interest-rate" class="inputbox"  onkeyup="this.value = this.value.replace (/[^0-9\.]/, '');" />
     </div>
 
     <div class="div-row">
         <label> <?php echo JText::_("Term of loan (year) ") ?> </label>
-        <input type="text" name="term-loan" id="term-load" class="inputbox" />
+        <input type="text" name="term-loan" id="term-load" class="inputbox"  onkeyup="this.value = this.value.replace (/[^0-9\.]/, '');" />
     </div>
     <!--
     <div class="div-row">
@@ -52,6 +52,8 @@ defined('_JEXEC') or die;
       rate.onchange = calc;
       loan.onchange =calc;
 
+      
+
       function loan_cal(){
             var amount = document.getElementById("amount-load").value;
             var rate = document.getElementById("annual-interest-rate").value;
@@ -64,8 +66,8 @@ defined('_JEXEC') or die;
 
 
             var total = formular * monthly_term_loan;
-            var operation = "<b><?php echo JText::_("Monthly loan ") ?>"+ ": </b> " + formular.toFixed(4) ;
-            operation += "<br /><b><?php echo JText::_("Total payment ")?>  : </b> " + total.toFixed(4);
+            var operation = "<b><?php echo JText::_("Monthly loan ") ?>"+ " : $ </b> " +  formular.toFixed(2) ;
+            operation += "<br /><b><?php echo JText::_("Total payment ")?>  : $ </b> " + total.toFixed(2);
             //operation += "<br /><b>Outcome :</b> " +  (total-amount).toFixed(4);
             document.getElementById("total").innerHTML = operation ;
             document.getElementById("total").style.display="block";

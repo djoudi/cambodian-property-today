@@ -42,7 +42,7 @@
         
         <li >
             <label class="nitem" ><?php echo JText::_("Price:") ?> </label>
-            <div class="vitem" >  <?php echo "{$item->price}"; ?> </div>
+            <div class="vitem" > $ <?php echo intval($item->price) ; ?>  </div>
         </li>
 
         <li>
@@ -80,12 +80,9 @@
             <label class="nitem" ><?php echo JText::_("Swimming pool") ?> </label>
             <div class="vitem" >  <?php echo "{$item->feature_pool}"; ?> </div>
         </li>
-
-        <li class="lhighlight" style="border-bottom:none;" >
-            <?php echo JText::_("Location") ?>
-             (<?php echo "{$item->district_name}-{$item->province_name}"; ?>)
-        </li>
-
-        
+        <li >
+            <label class="nitem" ><?php echo JText::_("Location") ?> </label>
+            <div class="vitem" style="height: 2.6em;overflow: hidden;" ><?php echo "{$item->district_name}"; ?></div>
+        </li>        
     </ul>
 </div>

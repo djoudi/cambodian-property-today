@@ -68,20 +68,37 @@
                 <li><?php echo $this->form->getLabel('list'); ?>
                 <?php echo $this->form->getInput('list'); ?></li>
                 
-                <li><?php echo $this->form->getLabel('tel'); ?>
-                <?php echo $this->form->getInput('tel'); ?></li>
+                <li><?php echo $this->form->getLabel('price'); ?>
+                <?php echo $this->form->getInput('price'); ?></li>
 
                 <li><?php echo $this->form->getLabel('picture'); ?>
                 <?php echo $this->form->getInput('picture'); ?></li>
+
+
+                <li><?php echo $this->form->getLabel('size_lot'); ?>
+                <?php echo $this->form->getInput('size_lot'); ?></li>
+
+                <li><?php echo $this->form->getLabel('size_house'); ?>
+                <?php echo $this->form->getInput('size_house'); ?></li>
+
+
+
+
+
+
+
+
+
+
+                <!--
+                <li><?php echo $this->form->getLabel('tel'); ?>
+                <?php echo $this->form->getInput('tel'); ?></li>
 
                 <li><?php echo $this->form->getLabel('start_date'); ?>
                 <?php echo $this->form->getInput('start_date'); ?></li>
 
                 <li><?php echo $this->form->getLabel('end_date'); ?>
-                <?php echo $this->form->getInput('end_date'); ?></li>
-
-                <li><?php echo $this->form->getLabel('price'); ?>
-                <?php echo $this->form->getInput('price'); ?></li>
+                <?php echo $this->form->getInput('end_date'); ?></li>               
 
                 <li><?php echo $this->form->getLabel('commision_type'); ?>
                 <?php echo $this->form->getInput('commision_type'); ?></li>
@@ -98,11 +115,7 @@
                 <li><?php echo $this->form->getLabel('condition'); ?>
                 <?php echo $this->form->getInput('condition'); ?></li>
 
-                <li><?php echo $this->form->getLabel('size_lot'); ?>
-                <?php echo $this->form->getInput('size_lot'); ?></li>
                 
-                <li><?php echo $this->form->getLabel('size_house'); ?>
-                <?php echo $this->form->getInput('size_house'); ?></li>
 
                 <li><?php echo $this->form->getLabel('location_address'); ?>
                 <?php echo $this->form->getInput('location_address'); ?></li>
@@ -121,6 +134,7 @@
 
                 <li><?php echo $this->form->getLabel('location_area'); ?>
                 <?php echo $this->form->getInput('location_area'); ?></li>
+                -->
 
                 <li><?php echo $this->form->getLabel('id'); ?>
                 <?php echo $this->form->getInput('id'); ?></li>

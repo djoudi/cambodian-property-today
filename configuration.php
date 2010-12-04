@@ -18,7 +18,7 @@ class JConfig {
 	public $secret = 'AwZQuyBmxmqvd4OF';
 	public $gzip = '0';
 	public $error_reporting = '-1';
-	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help{major}{minor}:{keyref}';
+	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
 	public $xmlrpc_server = '0';
 	public $ftp_host = '127.0.0.1';
 	public $ftp_port = '21';
@@ -45,7 +45,7 @@ class JConfig {
 	public $MetaKeys = '';
 	public $MetaTitle = '1';
 	public $MetaAuthor = '1';
-	public $sef = '1';
+	public $sef = '0';
 	public $sef_rewrite = '0';
 	public $sef_suffix = '0';
 	public $unicodeslugs = '0';
@@ -54,4 +54,10 @@ class JConfig {
 	public $tmp_path = '/var/www/vet/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
+	public $MetaRights = '';
+	public $sitename_pagetitles = '0';
+	public $force_ssl = '0';
+	public $feed_email = 'author';
+	public $cookie_domain = '';
+	public $cookie_path = '';
 }

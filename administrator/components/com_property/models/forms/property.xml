@@ -121,9 +121,8 @@
         <option value="2" >Big</option>
     </field>
     <field id="feature_pool" name="feature_pool" type="list" label="Pool" description="" default="" >
-        <option value="0" >Small</option>
-        <option value="1" >Medium</option>
-        <option value="2" >Big</option>
+        <option value="0" >No</option>
+        <option value="1" >Yes</option>
     </field>
     
     <field id="feature_parking" name="feature_parking" type="text" label="Parking" description="" size="10" default="" />

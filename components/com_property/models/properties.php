@@ -45,6 +45,8 @@ class PropertyModelProperties extends JModelList
         $query->join('LEFT', "#__ch_province AS p ON p.id = d.id_province");
         $query->where(" a.published = 1");
 
+        $query->order(" a.id ") ;
+
         if( $task=="rent" || $type=="rent")
             $query->where("a.list = 1 ");
         else if($task=="sale" || $type=="sale")
@@ -53,7 +55,6 @@ class PropertyModelProperties extends JModelList
             $query->where("a.list = 3");
         else if($task=="sublease" || $type=="sublease")
             $query->where("a.list = 4");
-
         return $query;
     }
 

@@ -81,7 +81,11 @@
                 <li><?php echo $this->form->getLabel('size_house'); ?>
                 <?php echo $this->form->getInput('size_house'); ?></li>
 
+                <li><?php echo $this->form->getLabel('start_date'); ?>
+                <?php echo $this->form->getInput('start_date'); ?></li>
 
+                <li><?php echo $this->form->getLabel('end_date'); ?>
+                <?php echo $this->form->getInput('end_date'); ?></li>  
 
 
 

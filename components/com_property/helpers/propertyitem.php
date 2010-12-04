@@ -78,7 +78,12 @@
 
         <li>
             <label class="nitem" ><?php echo JText::_("Swimming pool") ?> </label>
-            <div class="vitem" >  <?php echo "{$item->feature_pool}"; ?> </div>
+            <div class="vitem" >  
+            <?php
+                $pool = array(JText::_("No"),JText::_("Yes"));
+                echo "{$pool[intval($item->feature_pool)]}";
+            ?>
+            </div>
         </li>
         <li >
             <label class="nitem" ><?php echo JText::_("Location") ?> </label>

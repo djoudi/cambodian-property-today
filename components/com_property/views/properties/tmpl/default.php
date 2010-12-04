@@ -2,7 +2,6 @@
 // no direct access
 defined('_JEXEC') or die;
 ?>
-
 <div>
     <?php foreach($this->items as $item) :?>
         <?php require JPATH_COMPONENT.DS."helpers".DS."propertyitem.php"; ?>
@@ -14,7 +13,7 @@ defined('_JEXEC') or die;
         <?php echo $pageLnk ; ?>
         <div class="clr" > </div>
     </div>
-    <?endif;?>
+    <?php endif;?>
 </div>
 <script type="text/javascript">
     new QuickBox(); 

@@ -4,24 +4,33 @@
 ?>
 <div class="listing" >
  <?php
-  $image = $item->picture ;
-  if($image)
-     $image =  PropertyImage::getImagePropertyListThumb($image);
-
-  else
+  $pic = $item->picture ;
+  if($pic){
+     $image =  PropertyImage::getImagePropertyListThumb($pic);
+     $fimage =  PropertyImage::getImageProperty($pic);
+  }
+  else{
      $image = "blank.jpg" ;
+     $fimage = $image;
+  }
 
-  $full_path = JURI::root()."images/propertyimage/thumb/{$image}" ;
+    $full_path = JURI::root()."images/propertyimage/thumb/{$image}" ;
+    $ffull_path = JURI::root()."images/propertyimage/thumb/{$fimage}" ;
+
+
+    $str = $item->category_type;
+    $str .= JText::_(" For ");
+    $str .= PFunc::getListIn($item->list);
 
  ?>
-    <div style="margin:0 auto;"> <img src='<?php echo $full_path; ?>' alt='' width='220' height='100' align='center' /> </div>
+    <div style="margin:0 auto;"> 
+      <a href="<?php echo "{$ffull_path}"; ?>" rel="quickbox" >
+          <img src='<?php echo $full_path; ?>' alt='<?php echo htmlentities($str,ENT_QUOTES).":  {$item->price}"; ?>' width='220' height='100' align='center' />
+      </a>
+    </div>
     <br />
     <h4 style="text-decoration: underline;">
-        <?php
-                echo $item->category_type;
-                echo JText::_(" For ");
-                echo PFunc::getListIn($item->list);
-        ?>
+        <?php echo $str; ?>
     </h4>
 
     <ul>

@@ -39,6 +39,7 @@ $templateparams     = $app->getTemplate(true)->params;
                 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/beez_20/css/layout.css" type="text/css" media="screen,projection" />
                  <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/beez_20/css/custome.css" type="text/css"  />
                 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/beez_20/css/jd.gallery.css" type="text/css"  />
+                <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/beez_20/javascript/QuickBox/css/quickbox.css" type="text/css"  />
 
                 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/beez_20/css/print.css" type="text/css" media="Print" />
 <?php
@@ -88,6 +89,7 @@ $templateparams     = $app->getTemplate(true)->params;
                 <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/beez_20/javascript/hide.js"></script>
                 <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/beez_20/javascript/jd.gallery.js"></script>
                 <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/beez_20/javascript/jd.gallery.set.js"></script>
+                <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/beez_20/javascript/QuickBox/src/QuickBox.js"></script>
 
                 <script type="text/javascript">
                         var big ='<?php echo $this->params->get('wrapperLarge');?>%';

@@ -16,4 +16,8 @@ defined('_JEXEC') or die;
     </div>
     <?endif;?>
 </div>
+<script type="text/javascript">
+    new QuickBox(); 
+</script>
+
 

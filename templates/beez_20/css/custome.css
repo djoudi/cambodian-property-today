@@ -143,3 +143,6 @@ select.inputbox{
     height: 3em;
     overflow: hidden;
 }
+.article-info{
+    display: none;
+}

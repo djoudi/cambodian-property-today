@@ -16,14 +16,15 @@ defined('_JEXEC') or die;
         <label> <?php echo JText::_("Term of loan (year) ") ?> </label>
         <input type="text" name="term-loan" id="term-load" class="inputbox" />
     </div>
-
+    <!--
     <div class="div-row">
         <label> <?php echo JText::_("Monthly loan payment") ?> </label>
         <input type="text" readonly name="monthly-loan" id="monthly-load" class="inputbox" />
     </div>
+    -->
     
     
-    <div style="display: hidden;margin-top:5px;" id="total"  >  </div>
+    <div style="display: hidden;margin-top:5px;line-height: 1.5;" id="total"  >  </div>
 
     <br />
     <div>
@@ -59,12 +60,13 @@ defined('_JEXEC') or die;
             var monthly_rate = parseFloat((rate/12)/100);   //rate yearly in percentage
             var monthly_term_loan = parseFloat(loan * 12 );  //term-of-load yearly
             var formular = parseFloat(amount*(monthly_rate/(1-Math.pow(1+monthly_rate,-monthly_term_loan ))));
-            document.getElementById("monthly-load").value = formular.toFixed(4);
+            //document.getElementById("monthly-load").value = formular.toFixed(4);
 
 
             var total = formular * monthly_term_loan;
-            var operation = "<b>Total payment :</b> " + total.toFixed(4);
-            operation += "<br /><b>Outcome :</b> " +  (total-amount).toFixed(4);
+            var operation = "<b><?php echo JText::_("Monthly loan ") ?>"+ ": </b> " + formular.toFixed(4) ;
+            operation += "<br /><b><?php echo JText::_("Total payment ")?>  : </b> " + total.toFixed(4);
+            //operation += "<br /><b>Outcome :</b> " +  (total-amount).toFixed(4);
             document.getElementById("total").innerHTML = operation ;
             document.getElementById("total").style.display="block";
             
@@ -76,7 +78,7 @@ defined('_JEXEC') or die;
           var loan = document.getElementById("term-load");
           if(amount.value !="" && rate.value != "" && loan.value!="")
               {
-                 document.getElementById("monthly-load").value = "";
+                 //document.getElementById("monthly-load").value = "";
                  loan_cal();
               }
       }

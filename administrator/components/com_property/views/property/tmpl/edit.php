@@ -71,9 +71,6 @@
                 <li><?php echo $this->form->getLabel('tel'); ?>
                 <?php echo $this->form->getInput('tel'); ?></li>
 
-                <li><?php echo $this->form->getLabel('date'); ?>
-                <?php echo $this->form->getInput('date'); ?></li>
-
                 <li><?php echo $this->form->getLabel('picture'); ?>
                 <?php echo $this->form->getInput('picture'); ?></li>
 

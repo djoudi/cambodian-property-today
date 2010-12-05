@@ -16,7 +16,7 @@
             description="Property Owner" class="inputbox"  />
 
     <field id="id_type" name="id_type" type="categorylist" extension="com_property"
-                label="Type" description="Property Type" class="inputbox" required="true" />
+                label="Category" description="Category" class="inputbox" required="true" />
 
      <field id="id_province" name="id_province" type="provincelist" extension="com_property"
                 label="City/State/Province" description="Province/City name" class="inputbox" required="true" />
@@ -27,7 +27,7 @@
 
     <field id="ref" name="ref" type="text" label="Ref" size="40" required="true" description="Use commonly for searching, reference to quickly access the whole system friendly for end user" />
     
-    <field id="list" name="list" type="typelist" label="List in" description="Published/Unpublished" />
+    <field id="list" name="list" type="typelist" label="Type" required="true" />
         
 
     <field id="tel" name="tel" type="text" label="Tel" description="" size="40" default="" />

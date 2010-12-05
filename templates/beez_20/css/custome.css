@@ -52,7 +52,7 @@
     clear:left;
     display:block;
     float:left;
-    width:65px
+    width:60px
 }
 .search-item li{
     line-height: 2.2;
@@ -128,8 +128,7 @@ ul.uform div{
     
 }
 select.inputbox{
-    width: 170px;
-    min-width: 170px;
+    width: 150px;
 }
 .button,.backh3{
     border-radius:3px;

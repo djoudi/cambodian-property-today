@@ -24,33 +24,35 @@ require(JModuleHelper::getLayoutPath('mod_property_search','default'));
   <ul class="search-item">
     <li>
         <label class="nitemsearch"> <?php echo JText::_("Type"); ?> </label>
-        : <?php echo JHTML::_('select.genericlist', $lists["list"], "jform[list]", ' class="inputbox" ', 'value', 'text',$forms["list"] ); ?>
+        <?php echo JHTML::_('select.genericlist', $lists["list"], "jform[list]", ' class="inputbox" ', 'value', 'text',$forms["list"] ); ?>
     </li>
 
     <li>
         <label class="nitemsearch"> <?php echo JText::_("Category"); ?> </label>
-        : <?php echo JHTML::_('select.genericlist', $lists["id_type"], "jform[id_type]", ' class="inputbox" ', 'value', 'text',$forms["id_type"] ); ?>
+        <?php echo JHTML::_('select.genericlist', $lists["id_type"], "jform[id_type]", ' class="inputbox" ', 'value', 'text',$forms["id_type"] ); ?>
     </li>
 
     <li>
         <label class="nitemsearch"> <?php echo JText::_("Province"); ?> </label>
-        : <?php echo JHTML::_('select.genericlist', $lists["id_province"], "jform[id_province]", ' class="inputbox" ', 'value', 'text',$forms["id_province"] ); ?>
+        <?php echo JHTML::_('select.genericlist', $lists["id_province"], "jform[id_province]", ' class="inputbox" ', 'value', 'text',$forms["id_province"] ); ?>
     </li>
 
     <li id ="">
         <label class="nitemsearch"> <?php echo JText::_("District"); ?> </label>
-        : <span id="container_id_district">
+        <span id="container_id_district">
         <?php echo JHTML::_('select.genericlist', $lists["id_district"], "jform[id_district]", ' class="inputbox" ', 'value', 'text',$forms["id_district"] ); ?>
         </span>
     </li>
 
     <li>
-        <label class="nitemsearch"> <?php echo JText::_("Price list"); ?> </label>
-        : <?php echo JHTML::_('select.genericlist', $lists["price"], "jform[price]", ' class="inputbox" ', 'value', 'text',$forms["price"] ); ?>
+        <label class="nitemsearch"> <?php echo JText::_("Price"); ?> </label>
+        <?php echo JHTML::_('select.genericlist', $lists["price"], "jform[price]", ' class="inputbox" ', 'value', 'text',$forms["price"] ); ?>
     </li>
 
     <li>
-        <input type="submit" class="button" name="search" id="search" value=" Search " />
+        <p style="text-align: right;margin-right: 5px;">
+            <input type="submit" class="button" name="search" id="search" value=" Search " />
+        </p>
     </li>
  </ul>
 </form>

@@ -19,11 +19,10 @@ defined('_JEXEC') or die;
     
     <div style="display: hidden;margin-top:5px;line-height: 1.5;" id="total"  >  </div>
 
-    <br />
-    <div>
+    <p style="text-align: right;margin-right: 15px;">
         <input type="reset" id="reset"  class="button" value="<?php echo JText::_("Reset") ?>"  />
         <input type="button" class="button" value="<?php echo JText::_("Calculate") ?>"  id="load_reult_monthly" value="load_calculator" />
-    </div>
+    </p>
 
     
 </form>

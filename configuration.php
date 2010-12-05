@@ -45,14 +45,14 @@ class JConfig {
 	public $MetaKeys = '';
 	public $MetaTitle = '1';
 	public $MetaAuthor = '1';
-	public $sef = '0';
+	public $sef = '1';
 	public $sef_rewrite = '0';
 	public $sef_suffix = '0';
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
 	public $log_path = '/var/www/vet/logs';
 	public $tmp_path = '/var/www/vet/tmp';
-	public $lifetime = '15';
+	public $lifetime = '15000';
 	public $session_handler = 'database';
 	public $MetaRights = '';
 	public $sitename_pagetitles = '0';

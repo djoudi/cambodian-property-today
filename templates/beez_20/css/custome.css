@@ -58,14 +58,14 @@
     line-height: 2.2;
 }
 .nitem{
-        width:90px;
+        width:6em;
         float:left;
         clear:left;
         display:block;
         }
 .vitem{
     float:right;
-    width:120px;
+    width:75px;
     text-align: right;
 }
 .bnitem{
@@ -81,7 +81,7 @@
 }
 
 .listing{
-    width: 225px;
+    width: 170px;
     float:left;
     margin-right: 3px;
     margin-bottom: 10px;
@@ -90,6 +90,10 @@
     border:1px solid #ddd;
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
+}
+.listing ul{
+  margin: 0px;
+  padding: 0px;
 }
 .listing li{
     border-bottom: 1px solid rgb(245,245,245);
@@ -145,4 +149,11 @@ select.inputbox{
 }
 .article-info{
     display: none;
+}
+.tproperties li {
+    clear: both;
+    line-height: 1.2em;
+    margin: 0;
+    padding: 0;
+    clear: both;
 }

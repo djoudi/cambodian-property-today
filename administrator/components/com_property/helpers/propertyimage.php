@@ -18,7 +18,7 @@ class PropertyImage extends WideImage {
       return $thumb ;
     }
 
-    public static function getImagePropertyListThumb($image_str,$width=200,$height=200){
+    public static function getImagePropertyListThumb($image_str,$width=170,$height=130){
       $file = basename($image_str);
       $thumb = "list-{$file}";
       $image_path = JPATH_ROOT.DS."images".DS."propertyimage".DS."thumb".DS.$thumb;

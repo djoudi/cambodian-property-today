@@ -3,26 +3,19 @@ defined('_JEXEC') or die;
 ?>
 <form id="load-calculator" name="loan-calculator"  >
     <div class="div-row">
-        <label> <?php echo JText::_("Amount of loan") ?> </label>
+        <label style="display: block;"> <?php echo JText::_("Amount of loan") ?> </label>
         <input type="text" name="amount-load" id="amount-load" class="inputbox" onkeyup="this.value = this.value.replace (/[^0-9\.]/, '');" />
     </div>
 
     <div class="div-row">
-        <label> <?php echo JText::_("Annual Interest Rate (%)") ?> </label>
+        <label style="display: block;"> <?php echo JText::_("Annual Interest Rate (%)") ?> </label>
         <input type="text" name="annual-interest-rate" id="annual-interest-rate" class="inputbox"  onkeyup="this.value = this.value.replace (/[^0-9\.]/, '');" />
     </div>
 
     <div class="div-row">
-        <label> <?php echo JText::_("Term of loan (year) ") ?> </label>
+        <label style="display: block;"> <?php echo JText::_("Term of loan (year) ") ?> </label>
         <input type="text" name="term-loan" id="term-load" class="inputbox"  onkeyup="this.value = this.value.replace (/[^0-9\.]/, '');" />
     </div>
-    <!--
-    <div class="div-row">
-        <label> <?php echo JText::_("Monthly loan payment") ?> </label>
-        <input type="text" readonly name="monthly-loan" id="monthly-load" class="inputbox" />
-    </div>
-    -->
-    
     
     <div style="display: hidden;margin-top:5px;line-height: 1.5;" id="total"  >  </div>
 

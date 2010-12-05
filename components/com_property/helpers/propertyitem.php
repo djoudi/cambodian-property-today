@@ -25,7 +25,7 @@
  ?>
     <div style="margin:0 auto;"> 
       <a href="<?php echo "{$ffull_path}"; ?>" rel="quickbox" >
-          <img src='<?php echo $full_path; ?>' alt='<?php echo htmlentities($str,ENT_QUOTES).":  {$item->price}"; ?>' width='220' height='100' align='center' />
+          <img src='<?php echo $full_path; ?>' alt='<?php echo htmlentities($str,ENT_QUOTES).":  {$item->price}"; ?>' width='170' height='130' align='center' />
       </a>
     </div>
     <br />
@@ -33,7 +33,7 @@
         <?php echo $str; ?>
     </h4>
 
-    <ul>
+    <ul class="tproperties">
 
         <li style="font-weight: bold;">
             <label class="nitem" ><?php echo JText::_("Ref number:") ?> </label>
@@ -77,17 +77,17 @@
         </li>
 
         <li>
-            <label class="nitem" ><?php echo JText::_("Swimming pool") ?> </label>
-            <div class="vitem" >  
+            <label class="nitem" style="width:7em;" ><?php echo JText::_("Swimming pool") ?> </label>
+            <div class="vitem" style="width: 50px;" >
             <?php
                 $pool = array(JText::_("No"),JText::_("Yes"));
                 echo "{$pool[intval($item->feature_pool)]}";
             ?>
             </div>
         </li>
-        <li >
-            <label class="nitem" ><?php echo JText::_("Location") ?> </label>
-            <div class="vitem" style="height: 2.6em;overflow: hidden;" ><?php echo "{$item->district_name}"; ?></div>
+        <li style="font-weight: bold;" >
+                <label class="nitem" ><?php echo JText::_("Location") ?> </label>
+                <div class="vitem" ><?php echo "{$item->district_name}"; ?></div>
         </li>        
     </ul>
 </div>

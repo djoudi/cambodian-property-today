@@ -8,7 +8,7 @@ class PropertyModelProperties extends JModelList
 
     protected function getListQuery()
     {
-        $this->setState("list.limit",6);
+        $this->setState("list.limit",12);
         $start = JRequest::getVar("limitstart",0);
         $this->setState ("list.start", $start);
 
@@ -99,6 +99,7 @@ class PropertyModelProperties extends JModelList
            else
                $query->where("a.price > {$min} ");
         }
+        //echo ($query);
         return $query;
     }
     /**

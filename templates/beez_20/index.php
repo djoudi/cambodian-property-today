@@ -263,7 +263,7 @@ $templateparams     = $app->getTemplate(true)->params;
 
                                         <jdoc:include type="modules" name="position-14" />
                                         <p>
-                                              Copy &copy; right 2010 , Cambodian property today. All right reserved.
+                                            Copyright&copy; 2010 , Cambodia Property Today. All right reserved.
                                         </p>
 
 

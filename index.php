@@ -16,7 +16,7 @@ define('DS', DIRECTORY_SEPARATOR);
 
 ini_set("display_errors", 2);
 ini_set("error_reporting",E_ALL & ~E_NOTICE);
-define("CH_DEBUG",0);
+define("CH_DEBUG",1);
 function ch_debug($var,$exit=false,$configable=true)
  {
     if(CH_DEBUG  || $exit==true)

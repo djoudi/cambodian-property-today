@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>Property google adsense side nav</name>
+    <author>Joomlist team</author>
+    <creationDate>2010-10-23</creationDate>
+    <copyright>All rights reserved by joomlist.</copyright>
+    <license>GPL 2.0</license>
+    <authorEmail>chen.webdev@gmail.com</authorEmail>
+    <authorUrl>www.joomlist.com</authorUrl>
+    <version>1.0.0</version>
+    <description>Google adsense</description>
+    
+    <files>
+        <filename module="mod_property_adsense_side">mod_property_adsense_side.php</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                    <field
+                            name="code"
+                            type="textarea"
+                            label="Type"
+			    class="adsense"
+			    cols="60"
+			    rows="20"
+                            description="The sort of property to be displayed"
+                            required="true" >
+                            
+                    </field>
+              </fieldset>
+        </fields>
+     </config>
+
+</install>
+

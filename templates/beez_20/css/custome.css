@@ -149,10 +149,18 @@ select.inputbox{
 .article-info{
     display: none;
 }
+.tproperties{
+    margin: 0px;
+    padding:0px;
+}
 .tproperties li {
     clear: both;
     line-height: 1.2em;
     margin: 0;
     padding: 0;
     clear: both;
+    list-style-type: none;
+}
+.imageElement h3,.imageElement p{
+    display: none;
 }

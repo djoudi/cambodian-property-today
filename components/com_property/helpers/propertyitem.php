@@ -33,7 +33,7 @@
         <?php echo $str; ?>
     </h4>
 
-    <ul class="tproperties">
+    <ul class="tproperties" style="padding:5px;">
 
         <li style="font-weight: bold;">
             <label class="nitem" ><?php echo JText::_("Ref number:") ?> </label>

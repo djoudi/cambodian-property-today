@@ -19,7 +19,6 @@ class PropertyControllerProperties extends JController
     }
     public function search(){
         JRequest::setVar("layout","search");
-        ch_debug(JRequest::get());
         parent::display();
     }
     public function sale(){

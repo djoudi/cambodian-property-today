@@ -1,25 +1,22 @@
 <?php
-/**
- * @version		$Id: default.php 19424 2010-11-09 22:33:41Z chdemko $
- * @package		Joomla.Site
- * @subpackage	mod_banners
- * @copyright	Copyright (C) 2005 - 2010 Open Source Matters, Inc. All rights reserved.
- * @license		GNU General Public License version 2 or later; see LICENSE.txt
- */
+    defined('_JEXEC') or die;
+    require_once JPATH_ROOT . '/components/com_banners/helpers/banner.php';
+    $baseurl = JURI::base();
 
-// no direct access
-defined('_JEXEC') or die;
+    $app =& JFactory::getApplication();
+    //ch_debug($app->getTemplate());
+    //$document =& JFactory::getDocument();
+    //$document->addStyleSheet($url);
+    //$document->addScript($url);
 
-require_once JPATH_ROOT . '/components/com_banners/helpers/banner.php';
-$baseurl = JURI::base();
 ?>
-<div class="bannergroup<?php echo $params->get('moduleclass_sfx') ?>">
+<div >
 <?php if ($headerText) : ?>
 	<?php echo $headerText; ?>
 <?php endif; ?>
 
 <?php foreach($list as $item):?>
-	<div class="banneritem">
+	<div class="<?php echo $params->get('moduleclass_sfx') ?>">
 		<?php $link = JRoute::_('index.php?option=com_banners&task=click&id='. $item->id);?>
 		<?php if($item->type==1) :?>
 			<?php // Text based banners ?>
@@ -114,3 +111,8 @@ $baseurl = JURI::base();
 	</div>
 <?php endif; ?>
 </div>
+
+<script type="text/javascript" charset="utf-8" src="Fx.Elements.js"></script>
+<script type="text/javascript" charset="utf-8" src="Loop.js"></script>
+<script type="text/javascript" charset="utf-8" src="../Source/SlideShow.js"></script>
+<script type="text/javascript" charset="utf-8" src="demo.js"></script>

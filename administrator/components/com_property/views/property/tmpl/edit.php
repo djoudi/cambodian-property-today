@@ -67,9 +67,43 @@
 
                 <li><?php echo $this->form->getLabel('list'); ?>
                 <?php echo $this->form->getInput('list'); ?></li>
+
+
+                <?php
+                  if($this->item->price){
+                      $pstyle = "" ;
+                      $psqstyle = " display:none; ";
+                      $pcheck = "checked";
+                      $pscheck = "" ;
+                  }
+                  else{
+                     $pstyle = " display:none; " ;
+                     $psqstyle = "";
+                     $pcheck ="" ;
+                     $pscheck = "checked";
+                  }
+                ?>
+
                 
-                <li><?php echo $this->form->getLabel('price'); ?>
+                <li>
+                    <label title="" class="hasTip" for="jform_id_province" > <?php echo JText::_("Price type"); ?></label>
+                    <div style="" >
+
+                    <input style="display: inline;" <?php echo $pscheck; ?> type="radio" id="psprice" name="radio_price" />
+                    <span style="float:left;margin-top:5px;"> In square &nbsp; &nbsp; &nbsp;</span>
+
+                    <input  style="display: inline;"  <?php echo $pcheck; ?> type="radio" id="pprice" name="radio_price"  />
+                    <span style="float:left;margin-top:5px;" > Total </span>
+
+                    </div>
+                </li>
+
+
+                <li id="li_price" style="<?php echo $pstyle; ?>" ><?php echo $this->form->getLabel('price'); ?>
                 <?php echo $this->form->getInput('price'); ?></li>
+
+                <li id="li_price_in_sq" style="<?php echo $psqstyle ; ?>" ><?php echo $this->form->getLabel('price_in_sq'); ?>
+                <?php echo $this->form->getInput('price_in_sq'); ?></li>
 
                 <li><?php echo $this->form->getLabel('picture'); ?>
                 <?php echo $this->form->getInput('picture'); ?></li>
@@ -84,16 +118,13 @@
                 <li><?php echo $this->form->getLabel('start_date'); ?>
                 <?php echo $this->form->getInput('start_date'); ?></li>
 
-                <li><?php echo $this->form->getLabel('end_date'); ?>
-                <?php echo $this->form->getInput('end_date'); ?></li>  
+                <li i>
 
+                    <?php echo $this->form->getLabel('end_date'); ?>
+                    <?php echo $this->form->getInput('end_date'); ?>
 
-
-
-
-
-
-
+                </li>
+                
                 <!--
                 <li><?php echo $this->form->getLabel('tel'); ?>
                 <?php echo $this->form->getInput('tel'); ?></li>
@@ -340,6 +371,24 @@
                 });
                 request.send();
             }
+
+            var pradio = document.getElementById("pprice");
+            var psradio = document.getElementById("psprice");
+            pradio.onclick = function(){
+                document.getElementById("li_price").style.display="block";
+                document.getElementById("li_price_in_sq").style.display="none";
+                document.getElementById("jform_price_in_sq").value="" ;
+
+            };
+            psradio.onclick = function(){
+                document.getElementById("li_price").style.display="none";
+                document.getElementById("li_price_in_sq").style.display="block";
+                document.getElementById("jform_price").value="" ;
+
+            };
+
+
+
 
          });
 

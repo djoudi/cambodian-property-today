@@ -62,11 +62,16 @@
         float:left;
         clear:left;
         display:block;
+        height: 1.2em;
+        overflow: hidden;
         }
 .vitem{
     float:right;
     width:75px;
     text-align: right;
+
+        height: 1.2em;
+        overflow: hidden;
 }
 .bnitem{
         width:120px;

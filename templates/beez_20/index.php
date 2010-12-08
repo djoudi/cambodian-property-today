@@ -30,9 +30,24 @@ $templateparams     = $app->getTemplate(true)->params;
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://opengraphprotocol.org/schema/"
+      xml:lang="<?php echo $this->language; ?>"
+      lang="<?php echo $this->language; ?>"
+      dir="<?php echo $this->direction; ?>" >
         <head>
                 <jdoc:include type="head" />
+                <!--Open graph -->
+                <meta property="og:title" content="Cambodia realestate agentcy" />
+                <meta property="og:type" content="business" />
+                <meta property="og:url" content="<?php echo $this->baseurl; ?>" />
+                <meta property="og:image" content="<?php echo $this->baseurl ?>/images/log.jpg" />
+                
+                <meta property="og:site_name" content="Real estate services" />
+                
+                
+                <!--End graph-->
+
                 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
                 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/beez_20/css/template.css" type="text/css" />
                 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/beez_20/css/position.css" type="text/css" media="screen,projection" />

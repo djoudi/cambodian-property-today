@@ -29,21 +29,11 @@
       </a>
     </div>
     <br />
-    <h4 style="text-decoration: underline;">
+    <h3 style="padding:0px;margin:0px;font-size: 14px;">
         <?php echo $str; ?>
-    </h4>
+    </h3>
 
-    <ul class="tproperties" style="padding:5px;">
-
-        <li style="font-weight: bold;">
-            <label class="nitem" ><?php echo JText::_("Ref number:") ?> </label>
-            <div class="vitem" >  <?php echo "{$item->ref}"; ?> </div>
-        </li>
-        
-        <li >
-            <label class="nitem" ><?php echo JText::_("Price:") ?> </label>
-            <div class="vitem" > $ <?php echo intval($item->price) ; ?>  </div>
-        </li>
+    <ul class="tproperties" style="padding:5px;margin:0px;">
 
         <li>
             <label class="nitem" ><?php echo JText::_("Land Size") ?> </label>
@@ -85,9 +75,27 @@
             ?>
             </div>
         </li>
-        <li style="font-weight: bold;" >
+        <li >
                 <label class="nitem" ><?php echo JText::_("Location") ?> </label>
                 <div class="vitem" ><?php echo "{$item->district_name}"; ?></div>
-        </li>        
+        </li>
+
+        <li >
+            <label class="nitem" ><?php echo JText::_("Financials") ?> </label>
+            <div class="vitem" > $ 
+            
+                <?php
+                    if($item->price)
+                        echo intval($item->price) ;
+                    elseif($item->price_in_sq)
+                        echo "{$item->price_in_sq}".JText::_("/m<sup>2</sup>") ;
+                ?>
+            </div>
+        </li>
+
+        <li style="font-weight: bold;height: 1.2em;overflow: hidden;">
+            <label class="nitem" ><?php echo JText::_("Ref") ?> </label>
+            <div class="vitem" >  <?php echo "{$item->ref}"; ?> </div>
+        </li>
     </ul>
 </div>

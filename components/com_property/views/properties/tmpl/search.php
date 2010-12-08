@@ -6,7 +6,6 @@ defined('_JEXEC') or die;
 
 <?php
  $jform = JRequest::getVar("jform",array());
- ch_debug($jform)
 ?>
 <form action="<?php echo JRoute::_("index.php"); ?>" id="property_list" method="post" method="post" >
     <div>

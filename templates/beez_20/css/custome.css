@@ -169,3 +169,7 @@ select.inputbox{
 .imageElement h3,.imageElement p{
     display: none;
 }
+.dborder img {
+    border:1px solid #ccc;
+    margin: 3px;
+}

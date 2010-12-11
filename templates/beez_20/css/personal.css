@@ -89,7 +89,7 @@ fieldset
 	font-family:arial, sans-serif
 }
 #all #header
-{padding-top:3.0em ;
+{padding-top:0.0em ;
 }
 .logoheader
 {
@@ -146,13 +146,13 @@ h1#logo
    top:0em;
 
 	padding: 0px 0px 0px 0 ;
-	background:#f5f5f5 ; /* #e0e0e0  url(../images/personal/ecke.gif) top left repeat-x ; */
+	background:#660308 ; /* #e0e0e0  url(../images/personal/ecke.gif) top left repeat-x ; */
 	border:0 ;
-	text-align:left;
+	text-align:center;
 	left:0px;
 	 display:block;
 	 margin:0px ;
-	 border-top:solid 1px #ddd;
+	 border-top:none;
 
 }
 
@@ -163,13 +163,14 @@ h1#logo
 #header ul.menu li a:visited
 {
 
-	color:#333;
-	border:0 ;
-	border-right:solid 1px #ddd;
+	color:#fff;
+        border:0 ;
+	/*border-right:solid 1px #ddd;*/
+        border:none;
 	margin:0px 0 0 0 ;
 	padding:12px 15px ;
 	position:relative;
-	background: #f5f5f5; /* #e0e0e0 url(../images/personal/ecke.gif) repeat-x top left;*/
+	background: #660308; /* #e0e0e0 url(../images/personal/ecke.gif) repeat-x top left;*/
 	display:inline-block
 
 }

@@ -1,0 +1,11 @@
+Your order reference number is 1339871
+
+An e-mail receipt has been sent to chen.webdev@gmail.com
+
+Your Receipt Number is: d99f5-fa46e
+
+The majority of our orders (97%) are automatically processed and you should by now have your cPanel logins, however, sometimes orders are manually verified for extra security.
+
+This usually takes just a few minutes and you can track the progress of your order via the link below:
+
+Remember to login to cPanel to check out our today-only 50% discount on all our account add-ons such as Domain Privacy, Search Engine Submission, Private SSL and Dedicated IP's.

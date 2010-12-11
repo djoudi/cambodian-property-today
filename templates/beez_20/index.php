@@ -127,9 +127,11 @@ $templateparams     = $app->getTemplate(true)->params;
         </head>
 
         <body>
-
+            
 <div id="all">
+
         <div id="back">
+            
                  <div id="header">
                      <!--
                                 <div class="logoheader">
@@ -151,6 +153,10 @@ $templateparams     = $app->getTemplate(true)->params;
 
                                 </div>
             -->
+            <div style="background-color:#660308;text-align: center;">
+                <img src="/vet/images/propertyimage/logo/logo.jpg" width="115" height="90" />
+               <jdoc:include type="modules" name="tophead"   />
+            </div>
             <!-- end logoheader -->
                                         <ul class="skiplinks">
                                                 <li><a href="#main" class="u2"><?php echo JText::_('TPL_BEEZ2_SKIP_TO_CONTENT'); ?></a></li>
@@ -211,6 +217,7 @@ $templateparams     = $app->getTemplate(true)->params;
                                                 <?php endif; ?>
 
                                                         <jdoc:include type="component" />
+                                                       <!-- <jdoc:include type="modules" name="bcomp"   /> -->
 
                                                 </div><!-- end main -->
 

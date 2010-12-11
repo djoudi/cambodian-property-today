@@ -1,5 +1,5 @@
 <div>
-    <div id="myGallery" style="height: 300px; " >
+    <div id="myGallery" style="height: 260px; " >
         <div class="imageElement">
                 <h3>CPT Agent</h3>
                 <p>Nice classic cambodian wooden house from different perspective</p>

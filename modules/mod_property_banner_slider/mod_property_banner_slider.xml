@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>Property banner slider module </name>
+    <author>Joomlist team</author>
+    <creationDate>2010-10-23</creationDate>
+    <copyright>All rights reserved by joomlist.</copyright>
+    <license>GPL 2.0</license>
+    <authorEmail>chen.webdev@gmail.com</authorEmail>
+    <authorUrl>www.joomlist.com</authorUrl>
+    <version>1.0.0</version>
+    <description>Property banner slider </description>
+    
+    <files>
+        <filename module="mod_property_banner_slider">mod_property_banner_slider.php</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+
+
+    <config>
+        <fields name="params">
+           <fieldset name="basic">
+             <field id="id_category" name="id_category" type="bannerlist" label="Category" extension="com_property"
+                description="Client category name " class="inputbox" />
+           </fieldset>
+        </fields>
+     </config>
+</install>
+

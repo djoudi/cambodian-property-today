@@ -6,9 +6,9 @@ jimport('joomla.form.formfield');
 jimport('joomla.form.helper');
 JFormHelper::loadFieldClass('list');
 
-class JFormFieldCategoryList extends JFormFieldList
+class JFormFieldBannerList extends JFormFieldList
 {
-    protected $type = 'CategoryList';
+    protected $type = 'BannerList';
     public function getOptions()
     {
         $options = array();

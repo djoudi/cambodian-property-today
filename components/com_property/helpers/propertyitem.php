@@ -21,7 +21,6 @@
     $str = $item->category_type;
     $str .= JText::_(" For ");
     $str .= PFunc::getListIn($item->list);
-
  ?>
     <div style="margin:0 auto;"> 
       <a href="<?php echo "{$ffull_path}"; ?>" rel="quickbox" >
@@ -76,19 +75,24 @@
             </div>
         </li>
         <li >
-                <label class="nitem" ><?php echo JText::_("Location") ?> </label>
-                <div class="vitem" ><?php echo "{$item->district_name}"; ?></div>
+                <label class="nitem" style="width:30px;" ><?php echo JText::_("Add") ?> </label>
+                <div class="vitem" style="width:130px;" ><?php echo "{$item->district_name}"; ?></div>
         </li>
 
-        <li >
-            <label class="nitem" ><?php echo JText::_("Financials") ?> </label>
+        <li style="color:#660308;font-weight: bold;" >
+            <label class="nitem"  ><?php echo JText::_("Financials") ?> </label>
             <div class="vitem" > $ 
-            
+
                 <?php
-                    if($item->price)
+
+                    if($item->price){
                         echo intval($item->price) ;
+                        if($item->list==1)
+                            echo JText::_("/mth") ;
+                    }
                     elseif($item->price_in_sq)
                         echo "{$item->price_in_sq}".JText::_("/m<sup>2</sup>") ;
+                    
                 ?>
             </div>
         </li>

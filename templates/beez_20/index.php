@@ -38,6 +38,7 @@ $templateparams     = $app->getTemplate(true)->params;
         <head>
                 <jdoc:include type="head" />
                 <!--Open graph -->
+                <meta name="google-site-verification" content="vDk5L-4lOEuiBJPNnLDMdzzhO815s3dgweM0XxU0q-0" />
                 <meta property="og:title" content="Cambodia realestate agentcy" />
                 <meta property="og:type" content="business" />
                 <meta property="og:url" content="<?php echo $this->baseurl; ?>" />
@@ -154,7 +155,7 @@ $templateparams     = $app->getTemplate(true)->params;
                                 </div>
             -->
             <div style="background-color:#660308;text-align: center;">
-                <img src="/vet/images/propertyimage/logo/logo.jpg" width="115" height="90" />
+              <!--  <img src="/vet/images/propertyimage/logo/logo.jpg" width="115" height="90" /> -->
                <jdoc:include type="modules" name="tophead"   />
             </div>
             <!-- end logoheader -->
@@ -217,7 +218,7 @@ $templateparams     = $app->getTemplate(true)->params;
                                                 <?php endif; ?>
 
                                                         <jdoc:include type="component" />
-                                                       <!-- <jdoc:include type="modules" name="bcomp"   /> -->
+                                                       
 
                                                 </div><!-- end main -->
 
@@ -294,6 +295,18 @@ $templateparams     = $app->getTemplate(true)->params;
                         </div>
 
                 </div>
+                <script type="text/javascript">
 
+                      var _gaq = _gaq || [];
+                      _gaq.push(['_setAccount', 'UA-10485272-5']);
+                      _gaq.push(['_trackPageview']);
+
+                      (function() {
+                        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                      })();
+
+                </script>
         </body>
 </html>

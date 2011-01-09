@@ -173,3 +173,11 @@ select.inputbox{
     border:1px solid #ccc;
     margin: 3px;
 }
+.banneritem img,.banner img{
+    border: 1px solid #ccc;
+    margin: 3px;
+    padding: 1px;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius: 4px;
+}

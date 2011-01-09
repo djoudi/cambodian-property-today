@@ -85,7 +85,7 @@ class PropertyModelProperties extends JModelList
         if($form_data["id_province"])
             $query->where("a.id_province = '{$form_data["id_province"]}' ");
 
-        if($jform["id_district"])
+        if($form_data["id_district"])
             $query->where("a.id_district = '{$form_data["id_district"]}' ");
             
         if($form_data["price"]){
@@ -99,7 +99,6 @@ class PropertyModelProperties extends JModelList
            else
                $query->where("a.price > {$min} ");
         }
-        //echo ($query);
         return $query;
     }
     /**
